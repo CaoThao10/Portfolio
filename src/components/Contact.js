@@ -72,7 +72,7 @@ const Contact = () => {
                   rows="10"
                   cols="50"
                   required=""
-                >,rekeirfrigjkfdjfgriegjrism</textarea>
+                ></textarea>
               </div>
               {/* <button
                 class="form-submit-btn text-white text-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 py-1 rounded-lg hover:bg-gradient-to-r hover:from-indigo-400 hover:via-purple-400 hover:to-pink-400"
