@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+.active {
+  color: white;
+
+  /* Thêm các kiểu khác cho chữ active tại đây nếu cần */
+}
+
+
+
+.active-icon path:first-child {
+  fill: #ffffff;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -215,14 +227,14 @@ button:hover::before {
 .popup-container {
   position: absolute;
   top: 45%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: min(900px, 90%);
   background: rgba(133, 133, 133, 0.2);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
+  /* -webkit-backdrop-filter: blur(10px); */
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 12px;
   color: #fff;

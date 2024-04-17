@@ -1,11 +1,19 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  AOS.init();
   return (
     <div className="h-svh flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center">
         <div className="grid grid-cols-2  about-left-container ">
-          <div className="flex  flex-col gap-5 h-full text-[#fff] text-xl">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="flex  flex-col gap-5 h-full text-[#fff] text-xl"
+          >
             <span className="flex gap-3">
               <svg
                 className="shadow-xl"
@@ -58,7 +66,13 @@ const Contact = () => {
             </span>
             <img className="h-[200px] w-[200px]" src="/icon.png" alt="" />
           </div>
-          <div class="form-container ">
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            class="form-container "
+          >
             <form class="form">
               <div class="form-group">
                 <label for="email">Email</label>

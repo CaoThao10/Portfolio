@@ -1,21 +1,23 @@
 import React from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 const Home = () => {
+  AOS.init();
   return (
-    <div className="h-svh w-full flex  ">
+    <div data-aos="zoom-in-up" data-aos-duration="1500" className="flex  ">
       <div className="relative flex flex-col gap-y-5 gap-x-10 p-5">
         <div className="grid grid-cols-2 gap-x-5 w-full h-[50%]">
           <div className="text-white bg-[#000000] bg-opacity-10 rounded-2xl  flex flex-col   gap-y-5 gap-x-10">
             <div className="grid grid-cols-2 gap-x-5 w-full h-[50%] ">
               <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
                 <div className="flex flex-col justify-center items-center h-full bg-[#000000] bg-opacity-45">
-                  <span className="font-semibold h1">10+</span>
+                  <span className="font-semibold ">10+</span>
                   <span className="">Completed Projects</span>
                 </div>
               </div>
               <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
                 <div className="flex flex-col justify-center items-center h-full bg-[#000000] bg-opacity-45">
-                  <span className="font-semibold h1">1+ years</span>
+                  <span className="font-semibold ">1+ years</span>
                   <span className="">Experience front-end</span>
                 </div>
               </div>
@@ -23,7 +25,7 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-x-5 w-full h-[50%]">
               <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
                 <div className="flex flex-col justify-center text-center items-center h-full bg-[#000000] bg-opacity-65">
-                  <span className="font-semibold h1">3-year students</span>
+                  <span className="font-semibold ">3-year students</span>
                   <span className="text-lg ">
                     Information technology major at Phenikaa University
                   </span>
@@ -37,7 +39,7 @@ const Home = () => {
             </div>
           </div>
           <div className="text-white border gap-y-5 border-[#525252] p-5 bg-[#000000] bg-opacity-45 rounded-2xl flex flex-col h-full ">
-            <span className="text-xl font-semibold h1">Hi, i am Cao Thao</span>
+            <span className="text-xl font-semibold ">Hi, i am Cao Thao</span>
             <span className="text-lg ">
               I'm a Front End Developer. I have had more than 1 year of studying
               and working with Front-end. Currently I am still trying to get
@@ -115,7 +117,7 @@ const Home = () => {
                 </svg>
               </a>
             </div>
-            <div className="h1">
+            <div className="">
               <button className="px-4 py-1 rounded-xl">
                 <a className="text-lg" href="/contact">
                   Contact
@@ -127,21 +129,21 @@ const Home = () => {
         <div className="grid grid-cols-2 gap-x-5 w-full h-[50%]">
           <div className="text-white border border-[#525252] rounded-xl box-3  h-full w-full overflow-hidden ">
             <div className="relative top-0 w-full h-full flex flex-col pt-10 items-center">
-              <span className="text-2xl h1">Featured Projects</span>
+              <span className="text-2xl ">Featured Projects</span>
               <a className="text-blue-600" href="/project">
                 View all
               </a>
-              <div className="pt-10 flex flex-col gap-y-3 h3">
+              <div className="pt-10 flex flex-col gap-y-3 ">
                 <li>Citrus Blush Blogs</li>
                 <li>Book travel tickets</li>
               </div>
             </div>
           </div>
           <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
-            <div className="flex flex-col pt-10 items-center h-full bg-[#000000] bg-opacity-45 h1">
-              <span className="font-semibold pt-5 h1">Skills</span>
+            <div className="flex flex-col pt-10 items-center h-full bg-[#000000] bg-opacity-45 ">
+              <span className="font-semibold pt-5 ">Skills</span>
               <div className=" gap-10 w-full flex flex-col h-full px-10 pb-5 items-center justify-center">
-                <div className="flex gap-10 h1">
+                <div className="flex gap-10 ">
                   <svg
                     width="60"
                     height="60"
@@ -216,7 +218,7 @@ const Home = () => {
                     </defs>
                   </svg>
                 </div>
-                <div className="flex gap-10 h1">
+                <div className="flex gap-10 ">
                   <svg
                     width="60"
                     height="60"

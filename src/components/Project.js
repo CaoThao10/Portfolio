@@ -44,7 +44,7 @@ const Project = () => {
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://github.com/CaoThao10/Blog"
                 className="media-object__button"
                 // target="_blank"
               >
