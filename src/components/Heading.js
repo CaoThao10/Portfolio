@@ -12,7 +12,7 @@ const Heading = () => {
       <div className="silver-shadow w-[150px] h-[180px] overflow-hidden rounded-xl opacity-90 ">
         <img className=" object-cover h-full w-full " src="/avt3.jpg" alt="" />
       </div>
-      <div className="flex flex-col gap-10 font-semibold text-lg ">
+      <div className="flex flex-col gap-10 font-semibold text-lg items-start ">
         <NavLink
           to="/"
           className={`flex gap-x-3 icon text-[#b1b1b1] items-center justify-center ${
@@ -109,6 +109,8 @@ const Heading = () => {
       </div>
 
       <img
+        data-aos="fade-right"
+        data-aos-duration="1000"
         className="h-80 object-cover z-10 absolute top-[50%] left-[176px]"
         src="/cat.webp"
         alt=""

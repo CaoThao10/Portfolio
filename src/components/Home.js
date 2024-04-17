@@ -4,8 +4,12 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 const Home = () => {
   AOS.init();
   return (
-    <div data-aos="zoom-in-up" data-aos-duration="1500" className="flex  ">
-      <div className="relative flex flex-col gap-y-5 gap-x-10 p-5">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1500"
+      className="flex h-full "
+    >
+      <div className="relative items-center justify-center flex flex-col gap-y-5 gap-x-10 p-5">
         <div className="grid grid-cols-2 gap-x-5 w-full h-[50%]">
           <div className="text-white bg-[#000000] bg-opacity-10 rounded-2xl  flex flex-col   gap-y-5 gap-x-10">
             <div className="grid grid-cols-2 gap-x-5 w-full h-[50%] ">
@@ -130,10 +134,10 @@ const Home = () => {
           <div className="text-white border border-[#525252] rounded-xl box-3  h-full w-full overflow-hidden ">
             <div className="relative top-0 w-full h-full flex flex-col pt-10 items-center">
               <span className="text-2xl ">Featured Projects</span>
-              <a className="text-blue-600" href="/project">
+              <a className="text-blue-600 text-xl" href="/project">
                 View all
               </a>
-              <div className="pt-10 flex flex-col gap-y-3 ">
+              <div className="pt-10 flex flex-col gap-y-3 text-2xl">
                 <li>Citrus Blush Blogs</li>
                 <li>Book travel tickets</li>
               </div>

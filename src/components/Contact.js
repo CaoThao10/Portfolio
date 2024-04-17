@@ -12,6 +12,7 @@ const Contact = () => {
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
             className="flex  flex-col gap-5 h-full text-[#fff] text-xl"
           >
             <span className="flex gap-3">
@@ -70,7 +71,7 @@ const Contact = () => {
             data-aos="fade-left"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
-            data-aos-duration="500"
+            data-aos-duration="1000"
             class="form-container "
           >
             <form class="form">

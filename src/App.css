@@ -231,6 +231,7 @@ button:hover::before {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: min(900px, 90%);
+
   background: rgba(133, 133, 133, 0.2);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   /* backdrop-filter: blur(10px); */
@@ -248,7 +249,7 @@ button:hover::before {
   height: 70vh;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 30px 50px;
+  /* padding: 30px 50px; */
 }
 
 
@@ -256,6 +257,7 @@ button:hover::before {
 
 .about-container {
   display: grid;
+  height: 500px;
   grid-template-columns: 40% 50%;
   gap: 30px;
   place-items: center;
