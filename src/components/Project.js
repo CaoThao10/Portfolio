@@ -85,7 +85,11 @@ import React from "react";
 
 const Project = () => {
   return (
-    <div className="h-svh w-full flex items-center justify-center ">
+    <div
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+      className="h-svh w-full flex items-center justify-center "
+    >
       <article className="card lg:w-[900px] w-[80%] lg:p-10 p-3">
         <h1 className="card__title">
           <mark> Citrus Blush Blogs</mark> my project
