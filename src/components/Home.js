@@ -7,44 +7,46 @@ const Home = () => {
     <div
       data-aos="zoom-in-up"
       data-aos-duration="1500"
-      className="flex h-full "
+      className="flex  h-[100%] pl-[60px] lg:pl-0"
     >
-      <div className="relative items-center justify-center flex flex-col gap-y-5 gap-x-10 p-5">
-        <div className="grid grid-cols-2 gap-x-5 w-full h-[50%]">
-          <div className="text-white bg-[#000000] bg-opacity-10 rounded-2xl  flex flex-col   gap-y-5 gap-x-10">
-            <div className="grid grid-cols-2 gap-x-5 w-full h-[50%] ">
-              <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
-                <div className="flex flex-col justify-center items-center h-full bg-[#000000] bg-opacity-45">
+      <div className="relative items-center justify-center w-full flex flex-col lg:gap-y-10 gap-y-5 gap-x-10 xl:p-10 p-5">
+        <div className="lg:grid lg:grid-cols-2 gap-x-5 lg:gap-y-10 gap-y-5 lg:h-[50%] w-full  flex flex-col">
+          <div className="text-white bg-[#000000] bg-opacity-10 rounded-2xl  flex flex-col gap-y-2 gap-x-10">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-x-5 w-full flex flex-col lg:gap-y-5 gap-y-5 lg:h-[50%]">
+              <div className="text-white lg:text-2xl text-lg flex justify-center items-center bg-[#000000] bg-opacity-45  border h-[160px]  border-[#525252] rounded-xl  shadow-slate-200">
+                <div className="flex flex-col justify-center items-center   ">
                   <span className="font-semibold ">10+</span>
                   <span className="">Completed Projects</span>
                 </div>
               </div>
-              <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
-                <div className="flex flex-col justify-center items-center h-full bg-[#000000] bg-opacity-45">
+              <div className="text-white flex justify-center items-center  lg:text-2xl text-lg h-[160px] border bg-[#000000]  bg-opacity-45  border-[#525252] rounded-xl  shadow-slate-200">
+                <div className="flex flex-col justify-center items-center">
                   <span className="font-semibold ">1+ years</span>
                   <span className="">Experience front-end</span>
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-x-5 w-full h-[50%]">
-              <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
-                <div className="flex flex-col justify-center text-center items-center h-full bg-[#000000] bg-opacity-65">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-x-5 flex flex-col gap-y-5 w-full lg:h-[50%] ">
+              <div className="text-white lg:text-2xl text-lg border flex justify-center items-center  h-[160px]  bg-opacity-45 bg-[#000000] border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
+                <div className="flex flex-col justify-center text-center items-center h-full  ">
                   <span className="font-semibold ">3-year students</span>
                   <span className="text-lg ">
                     Information technology major at Phenikaa University
                   </span>
                 </div>
               </div>
-              <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
+              <div className="text-white text-2xl border h-[160px]  border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
                 <div className="flex flex-col justify-center text-center items-center h-full bg-[#000000] bg-opacity-65">
                   <img className=" opacity-80" src="/6.jpg" alt="" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="text-white border gap-y-5 border-[#525252] p-5 bg-[#000000] bg-opacity-45 rounded-2xl flex flex-col h-full ">
-            <span className="text-xl font-semibold ">Hi, i am Cao Thao</span>
-            <span className="text-lg ">
+          <div className="text-white border gap-y-5 border-[#525252]  p-5 bg-[#000000] bg-opacity-45 rounded-2xl flex flex-col h-full ">
+            <span className="lg:text-2xl text-lg font-semibold ">
+              Hi, i am Cao Thao
+            </span>
+            <span className="lg:text-lg text-md ">
               I'm a Front End Developer. I have had more than 1 year of studying
               and working with Front-end. Currently I am still trying to get
               better day by day studying day by day. <br /> Welcome to my
@@ -130,24 +132,24 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-x-5 w-full h-[50%]">
-          <div className="text-white border border-[#525252] rounded-xl box-3  h-full w-full overflow-hidden ">
-            <div className="relative top-0 w-full h-full flex flex-col pt-10 items-center">
-              <span className="text-2xl ">Featured Projects</span>
+        <div className="lg:grid lg:grid-cols-2 flex flex-col gap-5 w-full lg:h-[50%]">
+          <div className="text-white border border-[#525252] rounded-xl box-3  overflow-hidden ">
+            <div className="relative top-0  flex flex-col pt-10 items-center">
+              <span className="lg:text-2xl text-xl ">Featured Projects</span>
               <a className="text-blue-600 text-xl" href="/project">
                 View all
               </a>
-              <div className="pt-10 flex flex-col gap-y-3 text-2xl">
+              <div className="py-10 flex flex-col gap-y-3 lg:text-2xl text-lg">
                 <li>Citrus Blush Blogs</li>
                 <li>Book travel tickets</li>
               </div>
             </div>
           </div>
           <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
-            <div className="flex flex-col pt-10 items-center h-full bg-[#000000] bg-opacity-45 ">
-              <span className="font-semibold pt-5 ">Skills</span>
-              <div className=" gap-10 w-full flex flex-col h-full px-10 pb-5 items-center justify-center">
-                <div className="flex gap-10 ">
+            <div className="flex flex-col lg:pt-10 p-3 items-center h-full bg-[#000000] bg-opacity-45 ">
+              <span className="font-semibold lg:pt-5 pt-0">Skills</span>
+              <div className=" gap-10 w-full flex flex-col h-full px-10 py-5 items-center justify-center">
+                <div className="flex lg:gap-10 gap-5 ">
                   <svg
                     width="60"
                     height="60"
@@ -222,7 +224,7 @@ const Home = () => {
                     </defs>
                   </svg>
                 </div>
-                <div className="flex gap-10 ">
+                <div className="flex lg:gap-10 gap-5">
                   <svg
                     width="60"
                     height="60"

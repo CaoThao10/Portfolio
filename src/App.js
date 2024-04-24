@@ -78,17 +78,31 @@ import Project from "./components/Project";
 function App() {
   return (
     <BrowserRouter>
-      <div className="w-full h-full">
-        <img
-          className="h-full w-full object-cover absolute"
-          src="/3.jpg"
-          alt=""
-        />
-        <div className="relative flex">
-          <div className="w-[200px]">
+      <div className="lg:h-screen w-screen ">
+        <div className="bg-image-container">
+          <img
+            className=" h-full w-full lg:h-screen lg:w-screen object-cover absolute "
+            src="/3.jpg"
+            alt=""
+            style={{ minHeight: "100vh" }}
+          />
+        </div>
+        <div className="relative flex w-full h-full">
+          <div className=" w-[60px] xl:w-[200px]">
             <Heading />
+
+            <div className="lg:absolute fixed lg:top-[50%] top-[70%] z-10 lg:left-[176px] left-[45px]">
+              <img
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                className="lg:h-80 h-[150px] object-cover  "
+                src="/cat.webp"
+                alt=""
+                style={{ left: "45px" }} // Mặc định cho màn điện thoại
+              />
+            </div>
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full h-full ">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />

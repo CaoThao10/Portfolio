@@ -8,21 +8,23 @@ const Heading = () => {
   };
 
   return (
-    <div className=" bg-[#212121] flex-col gap-y-10  bg-opacity-50 border border-l-gray-500  z-10 h-svh w-[200px] flex items-center pt-[50px]">
-      <div className="silver-shadow w-[150px] h-[180px] overflow-hidden rounded-xl opacity-90 ">
+    <div className="fixed  bg-[#212121] flex-col gap-y-10  bg-opacity-50  border-l-gray-500  z-10 h-svh w-[60px] xl:w-[200px] flex items-center pt-[50px]">
+      <div className="silver-shadow w-[30px] h-[30px] xl:w-[150px] xl:h-[180px] overflow-hidden rounded-md xl:rounded-xl opacity-90 ">
         <img className=" object-cover h-full w-full " src="/avt3.jpg" alt="" />
       </div>
-      <div className="flex flex-col gap-10 font-semibold text-lg items-start ">
+      <div className="flex flex-col gap-10 font-semibold text-lg items-center ">
         <NavLink
           to="/"
-          className={`flex gap-x-3 icon text-[#b1b1b1] items-center justify-center ${
+          className={`flex  xl:gap-x-3 text-sm xl:text-xl icon  text-[#b1b1b1] items-center justify-center ${
             currentTab === "home" && "active"
           }`}
           // href="/home"
           onClick={() => handleTabClick("home")}
         >
           <svg
-            className={`${currentTab === "home" && "active-icon"}`}
+            className={`hidden xl:inline-block ${
+              currentTab === "home" && "active-icon"
+            }`}
             width="28"
             height="26"
             viewBox="0 0 24 24"
@@ -38,13 +40,15 @@ const Heading = () => {
         </NavLink>
         <NavLink
           to="/about"
-          className={`flex gap-x-3 text-[#b1b1b1] icon item-center justify-center ${
+          className={`flex  gap-1 xl:gap-x-3 text-sm xl:text-xl text-[#b1b1b1] icon item-center justify-center ${
             currentTab === "about" && "active"
           }`}
           onClick={() => handleTabClick("about")}
         >
           <svg
-            className={`${currentTab === "about" && "active-icon"}`}
+            className={`hidden xl:inline-block ${
+              currentTab === "about" && "active-icon"
+            }`}
             width="28"
             height="26"
             viewBox="0 0 256 256"
@@ -60,14 +64,16 @@ const Heading = () => {
         </NavLink>
         <NavLink
           to="/project"
-          className={`flex gap-x-3 icon text-[#b1b1b1] item-center justify-center ${
+          className={` flex gap-1 xl:gap-x-3 text-sm xl:text-xl icon text-[#b1b1b1] item-center justify-center ${
             currentTab === "project" && "active"
           }`}
           onClick={() => handleTabClick("project")}
           // href="/project"
         >
           <svg
-            className={`${currentTab === "project" && "active-icon"}`}
+            className={`hidden xl:inline-block ${
+              currentTab === "project" && "active-icon"
+            }`}
             width="28"
             height="26"
             viewBox="0 0 24 24"
@@ -83,14 +89,16 @@ const Heading = () => {
         </NavLink>
         <NavLink
           to="/contact"
-          className={`flex gap-x-3 icon text-[#b1b1b1] item-center justify-center ${
+          className={` flex gap-1 xl:gap-x-3 text-sm xl:text-xl icon text-[#b1b1b1] item-center justify-center ${
             currentTab === "contact" && "active"
           }`}
           onClick={() => handleTabClick("contact")}
           // href="/contact"
         >
           <svg
-            className={`${currentTab === "contact" && "active-icon"}`}
+            className={`hidden xl:inline-block ${
+              currentTab === "contact" && "active-icon"
+            }`}
             width="24"
             height="22"
             viewBox="0 0 16 16"
@@ -107,15 +115,6 @@ const Heading = () => {
           Contact
         </NavLink>
       </div>
-
-      <img
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        className="h-80 object-cover z-10 absolute top-[50%] left-[176px]"
-        src="/cat.webp"
-        alt=""
-        // style={{ marginRight: "13px" }}
-      />
     </div>
   );
 };
