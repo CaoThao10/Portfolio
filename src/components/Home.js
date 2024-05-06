@@ -11,7 +11,7 @@ const Home = () => {
     >
       <div className="relative items-center justify-center w-full flex flex-col lg:gap-y-10 gap-y-5 gap-x-10 xl:p-10 p-5">
         <div className="lg:grid lg:grid-cols-2 gap-x-5 lg:gap-y-10 gap-y-5 lg:h-[50%] w-full  flex flex-col">
-          <div className="text-white bg-[#000000] bg-opacity-10 rounded-2xl  flex flex-col gap-y-2 gap-x-10">
+          <div className="text-white bg-[#000000]  rounded-2xl  flex flex-col gap-y-2 gap-x-10">
             <div className="lg:grid lg:grid-cols-2 lg:gap-x-5 w-full flex flex-col lg:gap-y-5 gap-y-5 lg:h-[50%]">
               <div className="text-white lg:text-2xl text-lg flex justify-center items-center bg-[#000000] bg-opacity-45  border h-[160px]  border-[#525252] rounded-xl  shadow-slate-200">
                 <div className="flex flex-col justify-center items-center   ">
@@ -42,7 +42,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="text-white border gap-y-5 border-[#525252]  p-5 bg-[#000000] bg-opacity-45 rounded-2xl flex flex-col h-full ">
+          <div className="text-white border gap-y-5 border-[#525252]  p-5 bg-[#000000] rounded-2xl flex flex-col h-full ">
             <span className="lg:text-2xl text-lg font-semibold ">
               Hi, i am Cao Thao
             </span>
@@ -146,7 +146,7 @@ const Home = () => {
             </div>
           </div>
           <div className="text-white text-2xl border border-[#525252] rounded-xl overflow-hidden shadow-slate-200">
-            <div className="flex flex-col lg:pt-10 p-3 items-center h-full bg-[#000000] bg-opacity-45 ">
+            <div className="flex flex-col lg:pt-10 p-3 items-center h-full bg-[#000000]  ">
               <span className="font-semibold lg:pt-5 pt-0">Skills</span>
               <div className=" gap-10 w-full flex flex-col h-full px-10 py-5 items-center justify-center">
                 <div className="flex lg:gap-10 gap-5 ">

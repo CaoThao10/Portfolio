@@ -8,7 +8,7 @@ const Heading = () => {
   };
 
   return (
-    <div className="fixed  bg-[#212121] flex-col gap-y-10  bg-opacity-50  border-l-gray-500  z-10 h-svh w-[60px] xl:w-[200px] flex items-center pt-[50px]">
+    <div className="fixed  bg-[#000] flex-col gap-y-10  border border-l-0 border-t-0 border-b-0  border-r-gray-800  z-10 h-svh w-[60px] xl:w-[200px] flex items-center pt-[50px]">
       <div className="silver-shadow w-[30px] h-[30px] xl:w-[150px] xl:h-[180px] overflow-hidden rounded-md xl:rounded-xl opacity-90 ">
         <img className=" object-cover h-full w-full " src="/avt3.jpg" alt="" />
       </div>

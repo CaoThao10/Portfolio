@@ -78,14 +78,14 @@ import Project from "./components/Project";
 function App() {
   return (
     <BrowserRouter>
-      <div className="lg:h-screen w-screen ">
+      <div className="lg:h-screen w-screen bg-[#000] ">
         <div className="bg-image-container">
-          <img
+          {/* <img
             className=" h-full w-full lg:h-screen lg:w-screen object-cover absolute "
             src="/3.jpg"
             alt=""
             style={{ minHeight: "100vh" }}
-          />
+          /> */}
         </div>
         <div className="relative flex w-full h-full">
           <div className=" w-[60px] xl:w-[200px]">
