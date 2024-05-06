@@ -7,10 +7,10 @@ const Home = () => {
     <div
       data-aos="zoom-in-up"
       data-aos-duration="1500"
-      className="flex  h-[100%] pl-[60px] lg:pl-0"
+      className="flex my-[50px] xl:my-0  h-[100%] pl-0 xl:pl-[60px] lg:pl-0"
     >
       <div className="relative items-center justify-center w-full flex flex-col lg:gap-y-10 gap-y-5 gap-x-10 xl:p-10 p-5">
-        <div className="lg:grid lg:grid-cols-2 gap-x-5 lg:gap-y-10 gap-y-5 lg:h-[50%] w-full  flex flex-col">
+        <div className="xl:grid xl:grid-cols-2 gap-x-5 lg:gap-y-10 gap-y-5 xl:h-[50%] w-full  flex flex-col">
           <div className="text-white bg-[#000000]  rounded-2xl  flex flex-col gap-y-2 gap-x-10">
             <div className="lg:grid lg:grid-cols-2 lg:gap-x-5 w-full flex flex-col lg:gap-y-5 gap-y-5 lg:h-[50%]">
               <div className="text-white lg:text-2xl text-lg flex justify-center items-center bg-[#000000] bg-opacity-45  border h-[160px]  border-[#525252] rounded-xl  shadow-slate-200">
@@ -124,7 +124,7 @@ const Home = () => {
               </a>
             </div>
             <div className="">
-              <button className="px-4 py-1 rounded-xl">
+              <button className="px-4 py-1 rounded-xl ">
                 <a className="text-lg" href="/contact">
                   Contact
                 </a>
@@ -132,11 +132,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="lg:grid lg:grid-cols-2 flex flex-col gap-5 w-full lg:h-[50%]">
+        <div className="xl:grid xl:grid-cols-2 flex flex-col gap-5 w-full lg:h-[50%]">
           <div className="text-white border border-[#525252] rounded-xl box-3  overflow-hidden ">
             <div className="relative top-0  flex flex-col pt-10 items-center">
               <span className="lg:text-2xl text-xl ">Featured Projects</span>
-              <a className="text-blue-600 text-xl" href="/project">
+              <a
+                className="text-[#eb2d95] text-xl font-semibold"
+                href="/project"
+              >
                 View all
               </a>
               <div className="py-10 flex flex-col gap-y-3 lg:text-2xl text-lg">

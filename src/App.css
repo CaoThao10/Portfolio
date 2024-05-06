@@ -29,9 +29,18 @@
 }
 
 .active {
-  color: white;
+  /* color: white; */
+  color: rgb(255, 74, 167);
 
-  /* Thêm các kiểu khác cho chữ active tại đây nếu cần */
+
+}
+
+
+/* Đây là CSS để ẩn ảnh trên các thiết bị nhỏ như iPad và điện thoại */
+@media only screen and (max-width: 1024px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 
@@ -87,7 +96,7 @@
 
 
 .icon:hover {
-  color: white;
+  color: rgb(255, 74, 167);
 }
 
 .icon:hover path:first-child {
@@ -134,16 +143,16 @@ button {
   justify-content: center;
   cursor: pointer;
 
-  background: linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)), linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+  background: linear-gradient(#e280b3, #f73599), linear-gradient(#fc0dcc 50%, rgba(248, 13, 201, 0.6) 80%, rgba(19, 18, 19, 0)), linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
   background-origin: border-box;
   background-clip: padding-box, border-box, border-box;
   background-size: 200%;
-  animation: animate 2s infinite linear;
+  /* animation: animate 2s infinite linear; */
 }
 
 button::before {
   content: '';
-  background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+  /* background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red)); */
 
   position: absolute;
   bottom: -20%;
@@ -195,8 +204,12 @@ button:hover::before {
 
 
 .h1 {
-  font-family: "Marhey", sans-serif;
-  /* font-size: clamp(1.9rem, 2vw, 3rem); */
+  font-family: "Marhey", sans-serif !important;
+  background: linear-gradient(270deg, #D42F4A 0%, #F82BBF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #0000;
+  /* -webkit-box-decoration-break: clone; */
   opacity: 0;
   animation: title 1.1s ease 0.3s 1 normal forwards;
 }
@@ -264,7 +277,7 @@ button:hover::before {
 .popup-container {
   position: absolute;
   top: 45%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   /* width: min(900px, 90%); */
@@ -314,8 +327,8 @@ button:hover::before {
   overflow: hidden;
 
   border-radius: 8px;
-  box-shadow: rgba(62, 63, 168, 0.8) 0px 10px 30px 8px,
-    rgba(62, 63, 168, 0.8) 0px 0px 0px 2px;
+  box-shadow: rgb(226, 128, 179) 5px 10px 30px 8px,
+    rgb(226, 128, 179) 0px 0px 0px 2px;
 }
 
 .about-container .img-frame img {
@@ -609,12 +622,12 @@ mark {
 
 .form-container .form-group input:focus {
   outline: none;
-  border-color: #e81cff;
+  border-color: #eb2d95;
 }
 
 .form-container .form-group textarea:focus {
   outline: none;
-  border-color: #e81cff;
+  border-color: #eb2d95;
 }
 
 .form-container .form-submit-btn {

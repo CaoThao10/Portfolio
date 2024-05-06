@@ -88,10 +88,9 @@ function App() {
           /> */}
         </div>
         <div className="relative flex w-full h-full">
-          <div className=" w-[60px] xl:w-[200px]">
+          <div className="  xl:w-[200px]">
             <Heading />
-
-            <div className="lg:absolute fixed lg:top-[50%] top-[70%] z-10 lg:left-[176px] left-[45px]">
+            <div className="lg:absolute fixed lg:top-[50%] top-[70%] z-10 xl:left-[176px] hide-on-mobile">
               <img
                 data-aos="fade-right"
                 data-aos-duration="1000"

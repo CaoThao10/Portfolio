@@ -58,7 +58,7 @@ const About = () => {
             <img className="w-full" src="/avt2.jpg" alt="" />
           </div>
           <div className="hero-content">
-            <h1 className="h1 lg:text-4xl text-md">Cao Thao</h1>
+            <h1 className="h1 lg:text-4xl text-md ">Cao Thao</h1>
             <p className="lg:text-xl text-sm">
               I am a front-end developer. I am trying to learn and develop more
               every day. I will dedicate myself to creating visually appealing

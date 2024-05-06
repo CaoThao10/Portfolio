@@ -8,14 +8,19 @@ const Heading = () => {
   };
 
   return (
-    <div className="fixed  bg-[#000] flex-col gap-y-10  border border-l-0 border-t-0 border-b-0  border-r-gray-800  z-10 h-svh w-[60px] xl:w-[200px] flex items-center pt-[50px]">
-      <div className="silver-shadow w-[30px] h-[30px] xl:w-[150px] xl:h-[180px] overflow-hidden rounded-md xl:rounded-xl opacity-90 ">
-        <img className=" object-cover h-full w-full " src="/avt3.jpg" alt="" />
+    <div className="fixed  bg-[#000] flex-col gap-y-10 w-full py-5  border border-l-0 border-t-0 border-b-0  border-r-gray-800  z-10 xl:h-svh   xl:w-[200px] flex items-center xl:pt-[50px]">
+      <div className="silver-shadow  xl:w-[150px] hide-on-mobile xl:h-[180px] xl:overflow-hidden rounded-md xl:rounded-xl opacity-90 ">
+        <img
+          className=" xl:flex xl:flex-col  object-cover h-full w-full  hide-on-mobile"
+          src="/avt3.jpg"
+          alt=""
+        />
       </div>
-      <div className="flex flex-col gap-10 font-semibold text-lg items-center ">
+
+      <div className="flex xl:flex-col w-full justify-center  gap-10 font-semibold text-lg items-center ">
         <NavLink
           to="/"
-          className={`flex  xl:gap-x-3 text-sm xl:text-xl icon  text-[#b1b1b1] items-center justify-center ${
+          className={`flex  xl:gap-x-3 text-sm xl:text-xl icon  text-[#b1b1b1]  items-center justify-center ${
             currentTab === "home" && "active"
           }`}
           // href="/home"
