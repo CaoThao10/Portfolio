@@ -78,7 +78,7 @@ import Project from "./components/Project";
 function App() {
   return (
     <BrowserRouter>
-      <div className="lg:h-screen w-screen bg-[#000] ">
+      <div className="lg:h-screen bg-[#000] ">
         <div className="bg-image-container">
           {/* <img
             className=" h-full w-full lg:h-screen lg:w-screen object-cover absolute "
